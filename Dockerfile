@@ -1,5 +1,5 @@
 FROM ubuntu
-RUN node:16
+RUN apt-get -y update && apt-get -y install nodejs
 
 # Create app directory
 WORKDIR /usr/src/app
